@@ -1,0 +1,46 @@
+<!-- @Author-Bikash Shiwakoti - 000891600 
+Date: 07/20/2023
+code to display all the information in web page  -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="snake.css" />
+  </head>
+  <body>
+    <div id="start-screen">
+        <div class="info">
+            <h1>Instructions</h1>
+            <p>This is simple snake game and easy to play. The move the snake press Arrow up key to move snake upside,
+                Arrowdown to move down, Arrowright to move right and Arroeleft to move left. To set the initial size snake 
+                enter the desired number in range of 2-5. If no length is provided or is out range the default size is 
+                provided. The game finishes if snake touches it's own body or collide with border. The snake length increases 
+                if it's eat the food. To pause the game click the mouse. <strong>To start the game click the mouse</strong> and snake starts moving downwards.
+                To start the game click the <strong>start button</strong> below. There is also a score board to keep 
+                record of your game. </p>
+            <p>Thank You!!! Enjoy the game!!!
+            </p>
+        </div>
+      <label for="snakeLength">Enter a length for the snake (2-5): </label>
+      <input
+        type="number"
+        name="snakeLength"
+        id="snakeLength"
+        min="2"
+        max="5"
+        required
+      />
+      <button onclick="startGame()">Start</button>
+    </div>
+
+    <div id="game-screen" style="display: none">
+      <div id="scoreBox">Score: 0</div>
+      <svg id="board"></svg>
+    </div>
+    <footer>
+        &copy; Bikash Shiwakoti Mohawk College
+    </footer>
+    <script src="snake.js"></script>
+  </body>
+</html>

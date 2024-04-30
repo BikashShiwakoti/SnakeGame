@@ -1,0 +1,106 @@
+ /* @Author-Bikash Shiwakoti - 000891600 
+Date: 07/20/2023
+code to style html and svg elements   */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width:100%;
+}
+
+h1{
+    text-align: center;
+    color: rgb(11, 93, 93);
+    background-color: navajowhite;
+    border-radius: 10px;
+}
+body p{
+    margin-top: 1vh;
+    color: rgb(132, 106, 106);
+    font-weight: 100;
+    font-size: large
+}
+
+strong{
+    text-decoration: underline;
+    font-size: larger;
+    font-family: cursive;
+    color: #f00;
+    margin: 3px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 10vh;
+    border-top: 4px dotted  black;
+
+}
+.snake {fill: #000;}
+
+#scoreBox {
+    position: absolute;
+    top: 9px;
+    right: 50px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+} 
+#highscoreBox {
+    position: absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+.food {
+    fill: #f00;
+    border-radius: 10px;
+}
+
+/* Start screen styles */
+#start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    height: 80vh;
+}
+
+#start-screen label {
+    color: rgb(100, 226, 11);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#start-screen input {
+    margin-bottom: 2vh;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#start-screen button {
+    margin-top: 10vh;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+#start-screen button:hover {
+    background-color: #be7f0b;
+}
+.game-over {border-color: rgb(6, 146, 189) !important;}
